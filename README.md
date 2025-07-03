@@ -1,5 +1,6 @@
 # Cytokine-Drug-Response-Analysis
 🔍 Emphasizing Discovery and Clustering 
+
 Multivariate profiling of drug-induced cytokine shifts and biomarker-based infection classification using PCA, correlation analysis, and MANOVA in R.
 
 # 🧬 Cytokine Drug Response & Biomarker Profiling in R
@@ -28,17 +29,18 @@ This project combines two biological analysis tracks:
 
 ## 📈 PCA Loadings Summary (Top 2 Components)
 
-| Drug         | PC1     | PC2     |
-|--------------|---------|---------|
-  astaxanthin -0.3226 -0.2082
-cyclosporineA -0.2317  0.4466
-dexamethasone -0.3339  0.2732
-   everolimus -0.4158 -0.0275
- levalbuterol -0.3713  0.0490
-  ruxolitinib -0.3125 -0.4526
-    sirolimus -0.3845 -0.0052
-   tacrolimus -0.2951  0.5027
-  tofacitinib -0.2957 -0.4710
+| Drug          | PC1     | PC2     |
+|---------------|---------|---------|
+| astaxanthin   | -0.3226 | -0.2082 |
+| cyclosporineA | -0.2317 |  0.4466 |
+| dexamethasone | -0.3339 |  0.2732 |
+| everolimus    | -0.4158 | -0.0275 |
+| levalbuterol  | -0.3713 |  0.0490 |
+| ruxolitinib   | -0.3125 | -0.4526 |
+| sirolimus     | -0.3845 | -0.0052 |
+| tacrolimus    | -0.2951 |  0.5027 |
+| tofacitinib   | -0.2957 | -0.4710 |
+
 
 📄 Full file: [`pca_loadings.csv`](results/pca_loadings.csv)
 
@@ -89,11 +91,4 @@ install.packages(c("psych", "ggplot2", "mvnormtest", "biotools"))
 
 **Fares Ibrahim**  
 Bioinformatician | Immunology | Biomarker Discovery  
-🔗 [GitHub](https://github.com/Fares77-a11y)
-
----
-
-## 📄 License
-
-MIT License — see `LICENSE` file for terms.
-
+🔗 [GitHub](https://github.com/Fare
