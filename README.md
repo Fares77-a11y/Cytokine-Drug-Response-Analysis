@@ -41,7 +41,6 @@ This project combines two biological analysis tracks:
 | tacrolimus    | -0.2951 |  0.5027 |
 | tofacitinib   | -0.2957 | -0.4710 |
 
-
 📄 Full file: [`pca_loadings.csv`](results/pca_loadings.csv)
 
 ---
@@ -52,10 +51,35 @@ This project combines two biological analysis tracks:
 MANOVA (Hotelling-Lawley test): p-value = 0.004
 CRP showed significant differences between Malaria vs Virus (p=0.001) and Malaria vs Bacteria (p=0.01)
 Procalcitonin did not show significant differences across groups (p > 0.05)
-
 ```
 
 📄 Full file: [`manova_summary.txt`](results/manova_summary.txt)
+
+---
+
+## 📊 Boxplot Visualizations
+
+### 🔹 Immunosuppressive Drug Effects
+
+![Cytokine Boxplot](results/boxplots/Cytokine_log2FC_boxplot.png)
+
+- Visualizes log2 fold-change across 9 cytokines for selected drugs:
+  - Cyclosporine A
+  - Tacrolimus
+  - Tofacitinib
+  - Ruxolitinib
+
+### 🔹 Clinical Biomarkers by Infection Type
+
+**Procalcitonin:**
+
+![Procalcitonin Boxplot](results/boxplots/Procalcitonin_boxplot.png)
+
+**CRP:**
+
+![CRP Boxplot](results/boxplots/CRP_boxplot.png)
+
+Each figure includes jittered data points colored by group (Virus, Bacteria, Malaria).
 
 ---
 
@@ -66,11 +90,14 @@ Cytokine-Drug-Response-Analysis/
 ├── src/
 │   └── Cytokine_CRP_Analysis.Rmd
 ├── data/
-│   └── drugs_2022.csv
+│   └── drugs_2019.csv
 ├── results/
 │   ├── pca_loadings.csv
 │   ├── manova_summary.txt
 │   └── boxplots/
+│       ├── Cytokine_log2FC_boxplot.png
+│       ├── Procalcitonin_boxplot.png
+│       └── CRP_boxplot.png
 ├── README.md
 ```
 
@@ -91,4 +118,10 @@ install.packages(c("psych", "ggplot2", "mvnormtest", "biotools"))
 
 **Fares Ibrahim**  
 Bioinformatician | Immunology | Biomarker Discovery  
-🔗 [GitHub](https://github.com/Fare
+🔗 [GitHub](https://github.com/Fares77-a11y)
+
+---
+
+## 📄 License
+
+MIT License — see `LICENSE` file for terms.
